@@ -37,7 +37,7 @@ header a{
   text-decoration: none;
 }
 a:hover{
-  color: cyan;
+  color: orangered;
 }
 main {
   grid-area: main;
@@ -49,4 +49,79 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.esv-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.esv-main{
+  flex: 3 60rem;
+}
+.esv-sidebar{
+  flex: 1 20rem;
+}
+
+/* Products Component */
+.esv-products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.esv-products li{
+  flex: 0 1 29rem;
+  height: 47rem;
+  padding: 1rem;
+  
+}
+
+.esv-product{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: rgb(228, 206, 247);
+}
+
+.esv-product img{
+  max-width: 37rem;
+  max-height: 37rem;
+}
+
+.esv-product-price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.esv-product-price div, button{
+  text-align: center;
+  flex: 1;
+}
+
+.esv-product-price div{
+  font-size: 2rem;
+}
+
+.esv-button{
+  padding: 1rem;
+  border: 0.1rem silver solid;
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.esv-button:hover{
+  border: 0.2rem seagreen solid;
+}
+.esv-button.primary{
+  background-color: orange;
+}
+
+a{
+  text-decoration: none;
 }
